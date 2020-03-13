@@ -1,0 +1,124 @@
+.mnu-line
+  line-height: 1
+  font-size: 18px
+  font-weight: 300
+  padding: 25px 0
+  background-color: #fff
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    width: 300px
+    height: 100%
+    background-color: #fff
+    right: -300px
+    top: 0
+.main-mnu
+  padding-left: 50px
+  li
+    display: inline-block
+    margin-right: 40px
+  a
+    color: $text
+    text-decoration: none
+    &:hover
+      color: $accent-blue
+
+
+.top-line
+  background-color: #f6f6f6
+  display: flex
+  justify-content: space-between
+  align-items: center
+  border-top: 1px solid #e5e5e5
+  border-bottom: 1px solid #e5e5e5
+  padding: 17px 60px 17px 13px
+  line-height: 1
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    width: 300px
+    height: 100%
+    background-color: #f6f6f6
+    border-top: 1px solid #e5e5e5
+    border-bottom: 1px solid #e5e5e5
+    top: 0
+    right: -300px
+
+
+.form-search
+  font-size: 0
+  width: 530px
+  label
+    margin-bottom: 0
+    width: calc(100% - 75px)
+    display: inline-block
+  input
+    font-size: 16px
+    line-height: 1
+    padding: 12px 22px
+    font-weight: 100
+    background-color: transparent
+    border: 1px solid $accent-blue
+    border-top-left-radius: 3px
+    border-bottom-left-radius: 3px
+    border-right: none
+    &::placeholder
+      color: rgba($text, .5)
+  .btn
+    width: 75px
+    vertical-align: top
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+    height: 45px
+    padding: 0
+    line-height: 45px
+
+.top-help
+  font-size: 18px
+  color: #aaa
+  &:hover
+    color: #aaa
+    text-decoration: none
+
+.top-stocks
+  color: $accent-red
+  text-decoration: none
+  font-size: 18px
+  &:hover
+    color: $accent-red
+    text-decoration: underline
+
+.top-favorites
+  img
+    display: inline-block
+    margin-right: 8px
+  a
+    color: #727272
+    text-decoration: none
+    position: relative
+    top: 2px
+    &:hover
+      color: $accent-blue
+
+.top-cart
+  display: inline-flex
+  font-size: 18px
+  img
+    width: 34px
+    margin-right: 10px
+  a
+    color: $text
+    text-decoration: none
+    display: inline-block
+    margin-bottom: 4px
+    &:hover
+      color: $accent-blue
+  &>span
+    width: calc(100% - 44px)
+    &>span
+      display: block
+      font-size: 16px
+      color: #727272
+

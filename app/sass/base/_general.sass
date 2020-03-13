@@ -24,6 +24,7 @@ body
   font-family: $default-font
   overflow-x: hidden
   color: $text
+  background-color: #f4f4f4
   input, textarea
     border: #666 1px solid
     outline: none
@@ -54,6 +55,7 @@ a:active, a:focus
 a
   color: $accent-blue
   text-decoration: underline
+  +mt(.2s)
 
 a, li, button
   outline: none!important
@@ -66,5 +68,50 @@ ul
 .hidden
   display: none!important
 // ======= END TEMPLATE STYLES =======
+
+.page-container
+  display: flex
+  align-items: flex-start
+  position: relative
+  .sidebar
+    width: 288px
+    height: 100px
+    background-color: #fff
+  .content
+    width: calc(100% - 288px)
+
+.btn
+  display: inline-block
+  white-space: nowrap
+  line-height: 1
+  +mt(.3s)
+  text-align: center
+  text-transform: uppercase
+  font-size: 14px
+  font-weight: 600
+  box-shadow: none
+  cursor: pointer
+
+.btn-blue
+  background-color: $accent-blue
+  color: #fff
+  border-radius: 4px
+  padding: 16px
+  border: none
+  &:hover
+    background-color: darken($accent-blue, 10%)
+
+
+
+
+form
+  label
+    display: block
+  input
+    width: 100%
+
+
+
+
 
 
