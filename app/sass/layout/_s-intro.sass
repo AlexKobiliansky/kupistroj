@@ -1,0 +1,48 @@
+.s-intro
+  background-color: #fff
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    width: 300px
+    height: 100%
+    background-color: #fff
+    right: -300px
+    top: 0
+
+
+.intro-slide
+  padding-left: 60px
+  display: flex
+  align-items: flex-start
+  padding-top: 80px
+  background-color: #fff
+  &-content
+    width: 560px
+  &-img
+    width: calc(100% - 560px)
+  h2
+    font-size: 48px
+    font-weight: 700
+    line-height: 1
+    margin-bottom: 35px
+  &-desc
+    font-size: 24px
+
+.intro-slider
+  position: relative
+  .owl-dots
+    position: absolute
+    z-index: 2
+    left: 60px
+    bottom: 150px
+    button.owl-dot
+      display: inline-block
+      width: 12px
+      height: 12px
+      border-radius: 50%
+      background-color: #e7e7e7
+      margin: 0 5px
+      +mt(.3s)
+      &.active, &:hover
+        background-color: $accent-blue
