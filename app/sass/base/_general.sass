@@ -13,7 +13,7 @@
   color: #666
 
 ::selection
-  background-color: $accent
+  background-color: $accent-blue
   color: #fff
 
 body
@@ -43,13 +43,17 @@ body
 b, strong
   font-weight: bold
 
-a:hover, a:active, a:focus
-  color: inherit
+a:hover
+  color: $accent-blue
+  text-decoration: none
+
+a:active, a:focus
+  color: $accent-blue
   text-decoration: none
 
 a
-  color: $accent
-  text-decoration: none
+  color: $accent-blue
+  text-decoration: underline
 
 a, li, button
   outline: none!important
@@ -61,13 +65,6 @@ ul
 
 .hidden
   display: none!important
-
-//pixel-glass custom
-//html
-//  background-repeat: no-repeat
-//  background-position: 50% 0
-//  background-image: url('../img/layout/test.png')
-
 // ======= END TEMPLATE STYLES =======
 
 
