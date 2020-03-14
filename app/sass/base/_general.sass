@@ -75,9 +75,8 @@ ul
   position: relative
   .sidebar
     width: 288px
-    height: 100px
-    background-color: #fff
   .content
+    margin-left: 288px
     width: calc(100% - 288px)
 
 .btn
@@ -91,6 +90,7 @@ ul
   font-weight: 600
   box-shadow: none
   cursor: pointer
+  text-decoration: none
 
 .btn-blue
   background-color: $accent-blue
@@ -100,8 +100,14 @@ ul
   border: none
   &:hover
     background-color: darken($accent-blue, 10%)
+    color: #fff
+    text-decoration: none
 
-
+.section-title
+  font-size: 32px
+  font-weight: 700
+  line-height: 1.2
+  margin-bottom: 40px
 
 
 form

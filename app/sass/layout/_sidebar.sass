@@ -1,0 +1,107 @@
+.sidebar
+  position: fixed
+  top: 0
+  background-color: #fff
+  padding-top: 12px
+  padding-bottom: 35px
+  border-right: 1px solid #e5e5e5
+  border-bottom: 1px solid #e5e5e5
+  .logo
+    display: inline-block
+    margin-bottom: 7px
+  &:before
+    content: ''
+    position: absolute
+    width: 300px
+    height: 100%
+    left: -300px
+    top: 0
+    background-color: #fff
+  .btn
+    width: 204px
+    margin-top: 20px
+
+
+.site-desc
+  font-size: 14px
+  font-weight: 300
+  line-height: 1.1
+  margin-bottom: 10px
+
+.side-mnu
+  margin-bottom: 30px
+  a
+    display: flex
+    align-items: center
+    color: $text
+    text-decoration: none
+    padding: 9px 9px 9px 0
+    border-top: 1px solid #e5e5e5
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 300px
+      height: calc(100% + 1px)
+      left: -300px
+      top: 0
+      background-color: #fff
+      border-bottom: 1px solid #e5e5e5
+      +mt(.2s)
+    &:hover
+      background-color: $accent-blue
+      color: #fff
+      .hover
+        opacity: 1
+      .normal
+        opacity: 0
+      &:before
+        background-color: $accent-blue
+    img
+      +mt(.2s)
+      margin-right: 12px
+    .hover
+      position: absolute
+      z-index: 2
+      opacity: 0
+  li
+    &:last-child
+      a
+        border-bottom: 1px solid #e5e5e5
+        &:hover
+          background-color: $accent-red
+          &:before
+            background-color: $accent-red
+    &:first-child
+      a
+        &:before
+          border-top: 1px solid #e5e5e5
+          height: calc(100% + 2px)
+          top: -1px
+
+.contact-item
+  display: flex
+  align-items: center
+  margin-bottom: 15px
+  line-height: 1.1
+  &-icon
+    width: 25px
+  &-content
+    width: calc(100% - 25px)
+
+.contacts-block
+  a
+    color: $text
+    text-decoration: none
+    &:hover
+      color: $accent-blue
+  .phone
+    white-space: nowrap
+    font-size: 18px
+    font-weight: 500
+    margin-top: 10px
+    display: inline-block
+
+
+
+
