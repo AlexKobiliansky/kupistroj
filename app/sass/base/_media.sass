@@ -77,6 +77,18 @@
     font-size: 28px
 
 @media (max-width: 1400px)
+
+  .s-production
+    padding-top: 50px
+    padding-left: 30px
+
+  .production-item
+    &-content
+      padding-left: 15px
+      padding-right: 15px
+    &-img
+      height: 160px
+
   .form-search
     width: 350px
     input
@@ -109,6 +121,9 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .s-production
+    padding-left: 0
 
   .mnu-line
     display: none
@@ -184,7 +199,10 @@
 
 // ≥992px
 +media-breakpoint-down(md)
-  //*
+  .production-item
+    margin-bottom: 30px
+    &-img
+      height: 200px
 
 @media(max-width: 900px)
   .intro-slide

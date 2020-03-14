@@ -56,6 +56,20 @@ $(document).ready(function(){
         mouseDrag: false,
     });
 
+    function heightses() {
+        if ($(window).width()>480) {
+            $('.production-item-links').equalHeights();
+            $('.production-item-content').equalHeights();
+            $('.production-item-title').equalHeights();
+        }
+
+    }
+
+    $(window).resize(function() {
+        heightses();
+    });
+
+    heightses();
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
