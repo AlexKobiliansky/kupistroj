@@ -5,15 +5,15 @@
 
 @media (max-width: 1700px)
 
+  .about-img
+    right: -270px
+
   .top-cart
     margin-left: 20px
 
   .intro-slider
     .owl-dots
       bottom: 50px
-
-@media (max-width: 1700px)
-
 
   .mnu-line
     width: calc(100% + 15px)
@@ -46,6 +46,10 @@
 
 
 @media (max-width: 1600px)
+
+  .about-img
+    right: -330px
+
   .top-line
     padding-left: 20px
 
@@ -56,6 +60,18 @@
     width: 400px
 
 @media (max-width: 1500px)
+
+  .about-content
+    width: calc(100% - 90px)
+
+  .why-item
+    width: 240px
+    &:first-child
+      width: 200px
+    &-title
+      font-size: 18px
+
+
   .intro-slide
     h2
       font-size: 36px
@@ -77,6 +93,13 @@
     font-size: 28px
 
 @media (max-width: 1400px)
+
+  .about-content
+    margin-left: 45px
+    width: calc(100% - 60px)
+
+  .s-why
+    padding-left: 30px
 
   .s-production
     padding-top: 50px
@@ -121,6 +144,15 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  .s-why
+    padding-left: 0
+    padding-top: 50px
+
+  .about-content
+    margin-left: 15px
+    width: calc(100% - 30px)
+
 
   .s-production
     padding-left: 0
@@ -199,6 +231,35 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-why
+    padding-top: 30px
+    padding-bottom: 50px
+
+  .why-wrap
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+
+
+  .why-item
+    width: 33.33333%
+    &:first-child
+      width: 33.33333%
+      text-align: center
+      padding-left: 20px
+
+  .about-img
+    display: none
+
+  .about-content
+    top: 0
+    width: 100%
+    margin-left: 0
+
+  .s-about
+    padding: 15px
+
   .production-item
     margin-bottom: 30px
     &-img
@@ -277,8 +338,47 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .about-content
+    padding: 40px 25px
+
+  .why-item
+    padding: 0 10px
+    &-title
+      font-size: 14px
+    &-icon
+      height: 50px
+      img
+        height: 100%
+        width: auto
+
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .s-why
+    text-align: center
+
+  .why-wrap
+    flex-direction: column
+
+  .why-item
+    width: 100%
+    margin-bottom: 60px
+    &:first-child
+      width: 100%
+    &:last-child
+      margin-bottom: 0
+    &:after
+      width: 100px
+      height: 2px
+      right: calc(50% - 50px)
+      bottom: -30px
+      top: auto
+    &-icon
+      height: auto
+      margin-bottom: 20px
+    &-title
+      font-size: 18px
+
   .form-search
     order: 2
     width: 100%
@@ -316,6 +416,10 @@
       font-size: 22px
 
 @media (max-width: 390px)
+
+  .about-content
+    font-size: 14px
+
   .intro-slide
     h2
       font-size: 20px
