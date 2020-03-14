@@ -90,35 +90,101 @@
     color: $accent-red
     text-decoration: underline
 
+.top-icons-links
+  display: flex
+  align-items: center
+
 .top-favorites
+  color: #727272
+  text-decoration: none
   img
     display: inline-block
     margin-right: 8px
-  a
-    color: #727272
-    text-decoration: none
+  &>span
     position: relative
     top: 2px
-    &:hover
-      color: $accent-blue
+    white-space: nowrap
+  &:hover
+    color: $accent-blue
 
 .top-cart
   display: inline-flex
+  align-items: center
   font-size: 18px
+  color: $text
+  text-decoration: none
+  margin-left: 60px
+  &:hover
+    color: $accent-blue
   img
     width: 34px
     margin-right: 10px
-  a
-    color: $text
-    text-decoration: none
+  &-title
     display: inline-block
     margin-bottom: 4px
-    &:hover
-      color: $accent-blue
   &>span
     width: calc(100% - 44px)
-    &>span
-      display: block
-      font-size: 16px
-      color: #727272
+    white-space: nowrap
+  .help-class
+    display: block
+    font-size: 14px
+    color: #727272
+    white-space: nowrap
+
+.hamburger
+  padding-left: 0
+  padding-top: 5px
+  padding-bottom: 5px
+
+//mobile menu customization
+.mm-navbar
+  height: auto
+  flex-wrap: wrap
+  .logo-wrap
+    width: 100%
+    img
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 15px
+
+.mm-navbars_top
+  border-color: rgba(255, 255, 255, 0.7)
+
+.mm-panels
+  background: #fff
+  .contacts-block
+    color: $text
+
+.mm-panel
+  background: transparent
+
+.mm-menu_theme-dark
+  background-color: #fff
+
+.mm-menu a, .mm-menu a:active, .mm-menu a:hover, .mm-menu a:link, .mm-menu a:visited
+  color: $text
+
+.mm-navbars_top .mm-navbar_tabs:first-child .mm-navbar__tab_selected
+  color: $text!important
+
+.mm-navbar__tab_selected
+  border-color: #e5e5e5
+
+.mm-navbars_top
+  border-color: #e5e5e5
+
+.mm-listitem:after
+  border-color: #e5e5e5
+
+#mob-catalog
+  .normal
+    margin-right: 10px
+  .contacts-block
+    padding-left: 20px
+    margin-top: 30px
+  .btn
+    color: #fff
+    margin-left: 20px
+    margin-top: 20px
+
 

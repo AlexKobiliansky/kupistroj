@@ -3,17 +3,317 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1700px)
+
+  .top-cart
+    margin-left: 20px
+
+  .intro-slider
+    .owl-dots
+      bottom: 50px
+
+@media (max-width: 1700px)
+
+
+  .mnu-line
+    width: calc(100% + 15px)
+    &:after
+      display: none
+
+  .top-line
+    width: calc(100% + 15px)
+    &:after
+      display: none
+
+  .s-intro
+    width: calc(100% + 15px)
+    &:after
+      display: none
+
+  .s-banner
+    width: calc(100% + 15px)
+
+  .intro-slider
+    padding-bottom: 30px
+
+  .intro-slide
+    h2
+      font-size: 44px
+    &-img
+      width: 600px
+    &-content
+      width: calc(100% - 600px)
+
+
+@media (max-width: 1600px)
+  .top-line
+    padding-left: 20px
+
+  .top-help, .top-stocks, .top-cart
+    font-size: 16px
+
+  .form-search
+    width: 400px
+
+@media (max-width: 1500px)
+  .intro-slide
+    h2
+      font-size: 36px
+    &-desc
+      font-size: 20px
+    &-img
+      width: 500px
+    &-content
+      width: calc(100% - 500px)
+      padding-right: 15px
+
+  .s-banner
+    background-position: center center
+    padding-right: 50px
+    .section-title
+      font-size: 28px
+
+  .section-title
+    font-size: 28px
+
+@media (max-width: 1400px)
+  .form-search
+    width: 350px
+    input
+      font-size: 14px
+      padding: 10px 16px
+    .btn
+      height: 40px
+      line-height: 40px
+  .top-help, .top-stocks, .top-cart
+    font-size: 14px
+
+  .top-line
+    font-size: 14px
+  .mnu-line
+    padding: 20px 0
+    font-size: 16px
+
+  .main-mnu
+    li
+      margin-right: 30px
+
+  .intro-slide
+    padding-top: 60px
+    h2
+      font-size: 32px
+      margin-bottom: 25px
+
+
+
+
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .mnu-line
+    display: none
+
+  .top-line
+    position: relative
+    width: calc(100% + 30px)
+    left: -15px
+    border-top: none
+
+  .s-intro
+    width: calc(100% + 30px)
+    left: -15px
+
+  .s-banner
+    width: calc(100% + 30px)
+    left: -15px
+
+  .page-container
+    .sidebar
+      display: none
+    .content
+      width: 100%
+      margin-left: 0
+
+@media(max-width: 1100px)
+
+  .top-favorites
+    position: relative
+    &-span
+      display: none
+
+  #favorites-num
+    font-size: 12px
+    width: 16px
+    height: 16px
+    background-color: $accent-blue
+    color: #fff
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    font-weight: 500
+    position: absolute
+    right: 0
+    top: -6px
+
+  #cart-num
+    font-size: 12px
+    width: 16px
+    height: 16px
+    background-color: $accent-blue
+    color: #fff
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    font-weight: 500
+    position: absolute
+    right: 0
+    top: -3px
+
+
+  .top-cart
+    position: relative
+    img
+      height: 22px
+      width: auto
+    &-span
+      display: none
+    &-title
+      display: none
+
 // ≥992px
 +media-breakpoint-down(md)
+  //*
+
+@media(max-width: 900px)
+  .intro-slide
+    padding-left: 15px
+    padding-top: 30px
+    &-content
+      width: 50%
+    &-img
+      width: 50%
+    h2
+      font-size: 28px
+      margin-top: 30px
+    &-desc
+      font-size: 18px
+
+  .intro-slider
+    .owl-dots
+      bottom: 15px
+
+  .s-banner
+    padding-left: 15px
+
+@media(max-width: 800px)
+  .top-line
+    padding: 12px 15px
+    flex-wrap: wrap
+    justify-content: flex-start
+
+  .top-help
+    order: 2
+    display: inline-block
+    margin-right: 20px
+  .top-stocks
+    order: 3
+
+  .top-icons-links
+    width: 100px
+    justify-content: flex-end
+    margin-bottom: 15px
+
+  .hamburger
+    margin-bottom: 15px
+  .form-search
+    width: calc(100% - 190px)
+    margin-right: 25px
+    margin-left: 10px
+    margin-bottom: 15px
+
+  .section-title
+    font-size: 24px
+
+  .s-banner
+    padding-right: 15px
+    padding-top: 40px
+    padding-bottom: 40px
+    .section-title
+      font-size: 24px
+
+  .banner-desc
+    font-size: 18px
+
+  .top-cart
+    margin-left: 10px
+
+  .intro-slide
+    h2
+      font-size: 24px
+
+  .intro-slider
+    padding-bottom: 50px
 
 // ≥768px
 +media-breakpoint-down(sm)
 
 // ≥480px
 +media-breakpoint-down(xs)
+  .form-search
+    order: 2
+    width: 100%
+    margin-left: 0
+    margin-right: 0
+
+  .top-icons-links
+    width: calc(100% - 55px)
+
+  .intro-slider
+    padding-bottom: 0
+    .owl-dots
+      left: 0
+      width: 100%
+      text-align: center
+
+  .intro-slide
+    flex-wrap: wrap
+    &-content
+      width: 100%
+      margin-bottom: 25px
+      text-align: center
+    &-img
+      width: 100%
+    h2
+      margin-top: 0
+      font-size: 24px
+      margin-bottom: 15px
+
+  .section-title
+    font-size: 22px
+
+  .s-banner
+    .section-title
+      font-size: 22px
+
+@media (max-width: 390px)
+  .intro-slide
+    h2
+      font-size: 20px
+    &-desc
+      font-size: 16px
+
+  .s-banner
+    .section-title
+      font-size: 20px
+    .btn
+      width: 100%
+
+  .section-title
+    font-size: 20px
+
+
 
 
 /*==========  Mobile First  ==========*/
