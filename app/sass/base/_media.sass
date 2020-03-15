@@ -72,6 +72,13 @@
 
 @media (max-width: 1500px)
 
+  .blog-item
+    padding: 20px
+    &-title
+      font-size: 16px
+    &-desc
+      font-size: 14px
+
   .about-content
     width: calc(100% - 90px)
 
@@ -105,6 +112,8 @@
 
 @media (max-width: 1400px)
 
+  .pl-60
+    padding-left: 30px
 
   .main-foot
     .contacts-block
@@ -171,6 +180,17 @@
 // ≥1200px
 +media-breakpoint-down(lg)
 
+  .pl-60
+    padding-left: 0
+
+  .breadcrumbs
+    padding: 20px 0
+    font-size: 14px
+    a
+      &:after
+        height: 14px
+        top: calc(50% - 7px)
+
   .footer-content
     justify-content: space-between
 
@@ -219,6 +239,13 @@
       margin-left: 0
 
 @media(max-width: 1100px)
+
+  .blog-wrap
+    justify-content: space-between
+
+  .blog-item
+    width: calc(50% - 15px)
+    margin-right: 0
 
   .top-favorites
     position: relative
@@ -413,6 +440,14 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .blog-item
+    width: 100%
+
+  .s-blog
+    padding-bottom: 20px
+    .section-title
+      margin-bottom: 15px
 
   .hamburger
     .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before

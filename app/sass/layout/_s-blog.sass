@@ -1,0 +1,32 @@
+.s-blog
+  padding-bottom: 50px
+
+.blog-wrap
+  display: flex
+  flex-wrap: wrap
+
+.blog-item
+  width: calc(33.33333% - 20px)
+  margin-right: 30px
+  margin-bottom: 30px
+  border: 1px solid #dcdcdc
+  border-radius: 5px
+  padding: 35px 35px 20px
+  &:nth-child(3n)
+    margin-right: 0
+  &-title
+    font-size: 18px
+    font-weight: 600
+    margin-bottom: 12px
+  &-desc
+    font-weight: 300
+    margin-bottom: 12px
+    color: #000
+  &-link
+    font-size: 14px
+    color: $accent-darkblue
+    text-decoration: underline
+    &:hover
+      text-decoration: none
+      color: $accent-darkblue
+
