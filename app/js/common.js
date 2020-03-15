@@ -56,6 +56,16 @@ $(document).ready(function(){
         mouseDrag: false,
     });
 
+    $('.gallery-slider').owlCarousel({
+        loop:true,
+        nav:false,
+        items: 3,
+        dots: true,
+        margin: 22,
+        autoWidth: true,
+        dotsEach: 3
+    });
+
     function heightses() {
         if ($(window).width()>480) {
             $('.production-item-links').equalHeights();
@@ -70,6 +80,8 @@ $(document).ready(function(){
     });
 
     heightses();
+
+    $('.gallery-slide').photoswipe();
 
     $('.preloader').fadeOut();
 
