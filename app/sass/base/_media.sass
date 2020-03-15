@@ -78,6 +78,14 @@
 
 @media (max-width: 1500px)
 
+  .news-item
+    &-desc
+      font-size: 16px
+    &-title
+      font-size: 16px
+    &-img
+      height: 200px
+
   .production-desc
     padding-right: 0
 
@@ -314,6 +322,18 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .news-item
+    &-desc
+      font-size: 14px
+    &-link
+      font-size: 14px
+    &-title
+      font-size: 14px
+    &-date
+      font-size: 12px
+    &-img
+      height: 160px
+
   .gallery-slide
     max-width: 300px
 
@@ -468,6 +488,14 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .news-wrap
+    justify-content: space-between
+
+  .news-item
+    width: calc(50% - 10px)
+    margin-bottom: 20px
+    margin-right: 0
+
   .about-content
     padding: 40px 25px
 
@@ -483,6 +511,12 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .news-item
+    width: 100%
+    margin-bottom: 30px
+    &-img
+      height: 200px
 
   .s-gallery
     padding-top: 70px
