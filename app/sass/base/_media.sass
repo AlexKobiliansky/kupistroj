@@ -121,6 +121,12 @@
 
 @media (max-width: 1400px)
 
+  .subproduction-item
+    width: calc(33.33333% - 16px)
+    &:nth-child(3n)
+      margin-right: 0
+    &:nth-child(4n)
+      margin-right: 24px
   .pl-60
     padding-left: 30px
 
@@ -305,6 +311,14 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .subproduction-item
+    &-img
+      height: 160px
+    &-title
+      padding-left: 18px
+      font-size: 16px
+      height: calc(100% - 160px)
+
   .production-desc
     font-size: 16px
     padding-top: 10px
@@ -459,6 +473,23 @@
 // ≥480px
 +media-breakpoint-down(xs)
 
+  .s-subproduction
+    padding-bottom: 20px
+    .section-title
+      margin-bottom: 25px
+
+  .subproduction-item
+    width: calc(50% - 10px)
+    margin-bottom: 20px
+    margin-right: 0
+    &:nth-child(4n)
+      margin-right: 0
+    &-title
+      font-size: 14px
+
+  .subproduction-wrap
+    justify-content: space-between
+
   .s-article
     padding-bottom: 50px
 
@@ -564,6 +595,9 @@
       font-size: 22px
 
 @media (max-width: 390px)
+
+  .subproduction-item
+    width: 100%
 
   .s-production.p-production
     padding-bottom: 50px
