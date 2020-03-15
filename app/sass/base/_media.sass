@@ -47,6 +47,9 @@
 
 @media (max-width: 1600px)
 
+  .about-content
+    margin-left: 75px
+
   .about-img
     right: -330px
 
@@ -93,6 +96,9 @@
     font-size: 28px
 
 @media (max-width: 1400px)
+
+  .pl-75
+    padding-left: 45px
 
   .about-content
     margin-left: 45px
@@ -144,6 +150,14 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+
+  #map
+    position: relative
+    left: -15px
+    width: calc(100% + 15px)
+
+  .pl-75
+    padding-left: 15px
 
   .s-why
     padding-left: 0
@@ -231,6 +245,12 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .s-about
+    margin-bottom: 50px
+
+  #map
+    height: 400px
 
   .s-why
     padding-top: 30px
