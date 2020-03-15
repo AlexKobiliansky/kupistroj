@@ -1,0 +1,67 @@
+.main-foot
+  background-color: #fff
+  padding: 40px 0
+
+.footer-content
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+
+.footer-column
+  max-width: 280px
+  margin-right: 70px
+
+.footer-mnu
+  a
+    font-size: 18px
+    color: #a0a0a0
+    line-height: 1.2
+    &:hover
+      color: $accent-darkblue
+  li
+    margin-bottom: 8px
+    &:last-child
+      margin-bottom: 0
+
+.form-footer-search
+  margin-bottom: 18px
+  input
+    border-radius: 5px
+    font-size: 15px
+    line-height: 1
+    padding: 12px 40px 12px 20px
+    border: 1px solid #d6d6d6
+    &::placeholder
+      color: rgba($text, .52)
+  label
+    position: relative
+    &:after
+      content: ''
+      position: absolute
+      width: 17px
+      height: 17px
+      z-index: 2
+      background-image: url('../img/icons/search-icon-dark.png')
+      +bg-cover
+      right: 12px
+      top: calc(50% - 8.5px)
+
+
+.footer-cards
+  span
+    font-size: 14px
+    line-height: 1
+    white-space: nowrap
+    display: inline-block
+    margin-bottom: 15px
+
+.dev-line
+  font-size: 14px
+  font-weight: 500
+  color: #a0a0a0
+  text-align: center
+  padding: 22px 0 18px
+  img
+    position: relative
+    top: -5px
+

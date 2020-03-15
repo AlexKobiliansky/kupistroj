@@ -1,12 +1,22 @@
 .sidebar
   position: fixed
   top: 0
+  left: 0
   background-color: #fff
   padding-top: 12px
   padding-bottom: 35px
   border-right: 1px solid #e5e5e5
   border-bottom: 1px solid #e5e5e5
   z-index: 100
+  &-content
+    padding-left: 15px
+    padding-bottom: 30px
+    height: 100vh
+    overflow-y: scroll
+    -ms-overflow-style: none
+    scrollbar-width: none
+    &::-webkit-scrollbar
+      display: none
   .logo
     display: inline-block
     margin-bottom: 7px
