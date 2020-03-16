@@ -73,6 +73,18 @@
 
 @media (max-width: 1600px)
 
+  .cat-item
+    width: calc(33.33333% - 20px)
+    margin-bottom: 30px
+    margin-right: 30px
+    &:nth-child(4n)
+      margin-right: 30px
+    &:nth-child(3n)
+      margin-right: 0
+
+  .cat-labels-wrap
+    left: 10px
+
   .p-about
     padding-right: 0
 
@@ -100,6 +112,11 @@
     width: 400px
 
 @media (max-width: 1500px)
+
+  .catlist-item-title
+    font-size: 16px
+    line-height: 1.2
+    margin-bottom: 5px
 
   .news-item
     &-desc
@@ -345,6 +362,17 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .catalog-wrap
+    justify-content: space-between
+
+  .cat-item
+    padding-left: 15px
+    padding-right: 15px
+    width: calc(50% - 15px)
+    margin-right: 0
+    &:nth-child(4n)
+      margin-right: 0
+
   .filters
     justify-content: space-between
 
@@ -518,6 +546,22 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .catlist-item
+    &-midline
+      width: calc(100% - 200px)
+      padding: 0 8px
+    &-title
+      font-size: 14px
+      font-weight: normal
+    &-priceline
+      width: 70px
+      .current
+        font-size: 16px
+        span
+          font-size: 18px
+      .old
+        font-size: 14px
+
   .filters
     span
       font-size: 14px
@@ -570,6 +614,93 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .catlist-item
+    padding-left: 5px
+    padding-right: 10px
+    &-img
+      width: 35px
+    &-links
+      a
+        display: flex
+      .to-favorites
+        margin-left: 0
+      .btn
+        margin-bottom: 5px
+    &-priceline
+      width: 60px
+      .current
+        font-size: 14px
+        span
+          font-size: 16px
+      .old
+        font-size: 14px
+    &-midline
+      width: calc(100% - 140px)
+      padding: 0 5px
+    &-title
+      font-size: 12px
+    &-storage
+      font-size: 10px
+    .cat-item-label
+      font-size: 10px
+
+  .cat-item
+    width: calc(50% - 5px)
+    margin-bottom: 10px
+    &-img
+      height: 120px
+    &-label
+      font-size: 10px
+      padding: 5px
+      margin-right: 5px
+      margin-bottom: 5px
+      &.stock
+        width: 50px
+      &.hit
+        width: 40px
+      &.new
+        width: 55px
+    &-title
+      font-size: 12px
+      line-height: 1.2
+    &-storage
+      font-size: 10px
+    &-priceline
+      .current
+        font-size: 14px
+        margin-right: 12px
+        span
+          font-size: 18px
+      .old
+        font-size: 16px
+    &-bottom
+      display: flex
+      align-items: center
+      .btn
+        width: 32px
+        height: 30px
+        padding: 3px
+        display: flex
+        align-items: center
+        justify-content: center
+        .svg
+          margin-right: 0
+          width: 14px
+          height: auto
+          top: 0
+        span
+          display: none
+      .to-favorites
+        width: 32px
+        height: 30px
+        .svg
+          height: 15px
+
+
+
+  .cat-labels-wrap
+    top: 10px
 
   .filters
     position: relative
@@ -750,6 +881,32 @@
       font-size: 22px
 
 @media (max-width: 390px)
+
+  .catlist-item
+    flex-wrap: wrap
+    align-items: flex-start
+    &-midline
+      width: calc(100% - 50px)
+    &-priceline
+      margin-left: 54px
+      margin-top: 15px
+    &-links
+      margin-top: 15px
+      a
+        display: inline-flex
+      .btn
+        margin-bottom: 0
+      .to-favorites
+        margin-left: 10px
+
+  .cat-item
+    width: 100%
+    &-img
+      height: 190px
+    &-title
+      font-size: 16px
+    &-storage
+      font-size: 14px
 
   .gallery-slide
     max-width: 200px
