@@ -3,6 +3,29 @@
 
 /*==========  Desktop First  ==========*/
 
+@media (max-width: 1800px)
+  .filters
+    flex-wrap: wrap
+    justify-content: flex-start
+
+  .filter-sort
+    width: 50%
+    margin-bottom: 20px
+
+  .filter-price
+    order: 3
+    width: auto
+    margin-right: 40px
+
+  .filter-number
+    order: 4
+    text-align: right
+
+  .views
+    margin-bottom: 20px
+    width: 50%
+    text-align: right
+
 @media (max-width: 1700px)
 
   .s-article
@@ -322,6 +345,13 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .filters
+    justify-content: space-between
+
+  .view
+    span
+      display: none
+
   .news-item
     &-desc
       font-size: 14px
@@ -488,6 +518,35 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .filters
+    span
+      font-size: 14px
+      margin-right: 12px
+
+  .sort
+    font-size: 14px
+    .svg
+      top: -1px
+
+  .views
+    width: auto
+
+  .view
+    padding: 7px 12px
+
+  .form-filter
+    label
+      span
+        font-size: 12px
+    input
+      width: 60px
+      font-size: 14px
+      padding: 5px
+
+  .filter-sort
+    span
+      display: block
+
   .news-wrap
     justify-content: space-between
 
@@ -511,6 +570,48 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .filters
+    position: relative
+
+  .views
+    position: absolute
+    right: 0
+    top: -8px
+
+  .view
+    padding: 0
+    width: 26px
+    height: 26px
+    display: inline-flex
+    justify-content: center
+    align-items: center
+
+  .form-filter
+    input
+      font-size: 12px
+      width: 50px
+
+  #view-tile
+    img
+      position: relative
+
+  .filter
+    width: 100%
+    margin-bottom: 20px
+    margin-right: 0
+    &-sort
+      width: 100%
+      span
+        margin-bottom: 5px
+    &-number
+      text-align: left
+
+
+  .sort
+    font-size: 12px
+    .svg
+      width: 7px
 
   .news-item
     width: 100%

@@ -1,0 +1,85 @@
+.s-catalog
+  .section-title
+    margin-bottom: 20px
+
+.filters
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 22px
+
+.filter
+  white-space: nowrap
+  span
+    font-size: 18px
+    color: #989898
+    display: inline-block
+    margin-right: 18px
+
+.sort
+  color: #000
+  display: inline-block
+  margin-right: 15px
+  &:hover, &:active, &:focus
+    color: #000
+  .svg
+    width: 9px
+    height: auto
+    margin-left: 5px
+    position: relative
+    top: -2px
+  &.active
+    color: $accent-red
+    .svg
+      fill: $accent-red
+  &.asc
+    .svg
+      transform: rotate(180deg)
+
+.form-filter
+  display: inline-block
+  input
+    width: 74px
+    background-color: transparent
+    border: 1px solid #dcdcdc
+    border-radius: 5px
+    text-align: center
+    line-height: 1
+    padding: 8px
+  label
+    display: inline-block
+    margin-bottom: 0
+    span
+      font-size: 16px
+      margin-right: 8px
+
+.filter-price
+  .form-filter
+    label:first-child
+      margin-right: 15px
+
+.views
+  font-size: 0
+  white-space: nowrap
+
+.view
+  font-size: 16px
+  line-height: 1
+  padding: 10px 15px
+  background-color: #fff
+  border-radius: 5px
+  border: 1px solid #fff
+  cursor: pointer
+  display: inline-block
+  margin-left: 12px
+  vertical-align: top
+  &.active
+    border-color: $accent-red
+  img
+    position: relative
+    top: -2px
+  &:first-child
+    margin-left: 0
+
+
+
