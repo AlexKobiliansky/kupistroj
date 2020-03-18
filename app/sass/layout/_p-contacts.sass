@@ -1,0 +1,63 @@
+.p-contacts
+  padding-bottom: 70px
+  .section-title
+    margin-bottom: 25px
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &-left
+    width: 570px
+  &-right
+    width: calc(100% - 600px)
+  .del-wrap
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  .del-item
+    width: 50%
+    padding-right: 10px
+    margin-right: 0
+    margin-bottom: 8px
+    .call
+      font-size: 20px
+      font-weight: 600
+      display: block
+    .recall
+      font-size: 14px
+      color: $accent-blue
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+  &-form
+    padding-right: 100px
+    .form-labels-wrap
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-bottom: 18px
+      label, .btn
+        width: calc(33.33333% - 11px)
+        margin-bottom: 0
+      .btn
+        height: 49px
+    .checkbox-label
+      font-size: 14px
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      width: 520px
+      span
+        width: calc(100% - 32px)
+.jq-checkbox
+  width: 22px
+  height: 22px
+  border: 1px solid #dcdcdc
+  background: transparent
+  box-shadow: none
+
+.jq-checkbox.checked .jq-checkbox__div
+  width: 14px
+  height: 7px
+  margin-left: 4px
+  margin-top: 4px

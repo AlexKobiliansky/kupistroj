@@ -149,6 +149,8 @@ $(document).ready(function(){
         $('#payment-type').val(value);
     });
 
+    $('.checkbox-label input').styler();
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);
