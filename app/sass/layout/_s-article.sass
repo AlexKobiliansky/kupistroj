@@ -17,6 +17,20 @@
   &.p-article
     .section-title
       margin-bottom: 12px
+  ul
+    li
+      position: relative
+      padding-left: 16px
+      margin-bottom: 5px
+      &:before
+        content: ''
+        position: absolute
+        width: 7px
+        height: 7px
+        border-radius: 50%
+        background-color: $accent-darkblue
+        left: 0
+        top: 9px
 
 a.to-blog
   font-size: 16px
@@ -31,3 +45,18 @@ a.link-phone
   color: $accent-darkblue
   text-decoration: none
   white-space: nowrap
+
+
+.del-title
+  font-weight: 500
+  margin-bottom: 12px
+
+.del-item
+  display: inline-block
+  margin-right: 30px
+  &-title
+    text-transform: uppercase
+    font-size: 14px
+    color: $accent-darkblue
+    font-weight: 500
+
