@@ -118,8 +118,30 @@ ul
 form
   label
     display: block
+    margin-bottom: 15px
   input
     width: 100%
+    line-height: 1
+    padding: 14px 32px
+    border: 1px solid #dcdcdc
+    background-color: transparent
+    border-radius: 5px
+    &:focus
+      border-color: $accent-blue
+    &::placeholder
+      color: $text
+      font-weight: 300
+    &.error
+      color: red!important
+      border-color: red!important
+      &::placeholder
+        color: red!important
+  h3
+    font-size: 22px
+    font-weight: 600
+    margin-bottom: 20px
+  .help-block
+    display: none
 
 .pl-75
   padding-left: 75px

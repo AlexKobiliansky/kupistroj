@@ -116,6 +116,39 @@ $(document).ready(function(){
 
     $('.preloader').fadeOut();
 
+
+
+    $.validate({
+        form : '.contact-form',
+        scrollToTopOnError: false
+    });
+
+    var uPhone = $('.user-phone');
+    uPhone.mask("+7 (999) 999-99-99",{autoclear: false});
+
+    uPhone.on('click', function (ele) {
+        var needelem = ele.target || event.srcElement;
+        needelem.setSelectionRange(4,4);
+        needelem.focus();
+    });
+
+    $('.value-div.delivery').click(function(){
+        var th = $(this);
+        var value = th.data('value');
+
+        th.addClass('active').siblings('.value-div').removeClass('active');
+        $('#delivery-type').val(value);
+    });
+
+
+    $('.value-div.payment').click(function(){
+        var th = $(this);
+        var value = th.data('value');
+
+        th.addClass('active').siblings('.value-div').removeClass('active');
+        $('#payment-type').val(value);
+    });
+
     //E-mail Ajax Send
     $("form").submit(function() { //Change
         var th = $(this);

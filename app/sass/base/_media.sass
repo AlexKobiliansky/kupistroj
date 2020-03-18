@@ -4,6 +4,16 @@
 /*==========  Desktop First  ==========*/
 
 @media (max-width: 1800px)
+
+  .delivery-labels-wrap
+    input
+      padding-left: 10px
+      font-size: 14px
+
+  .value-div
+    span
+      font-size: 12px
+
   .filters
     flex-wrap: wrap
     justify-content: flex-start
@@ -73,6 +83,16 @@
 
 @media (max-width: 1600px)
 
+  .checkout-form
+    &-right
+      width: 340px
+      padding: 25px 20px
+    &-left
+      width: calc(100% - 370px)
+    &-bottom
+      &>div
+        width: calc(50% - 15px)
+
   .cat-item
     width: calc(33.33333% - 20px)
     margin-bottom: 30px
@@ -112,6 +132,16 @@
     width: 400px
 
 @media (max-width: 1500px)
+
+  .s-checkout
+    padding-bottom: 20px
+
+  .checkout-form
+    &-bottom
+      flex-wrap: wrap
+      &>div
+        width: 100%
+        margin-bottom: 30px
 
   .catlist-item-title
     font-size: 16px
@@ -362,6 +392,14 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .checkout-form
+    .form-labels-wrap
+      flex-wrap: wrap
+      label
+        width: 100%
+        margin-bottom: 15px
+
+
   .catalog-wrap
     justify-content: space-between
 
@@ -546,6 +584,19 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .s-checkout
+    padding-bottom: 50px
+
+  .checkout-form
+    flex-wrap: wrap
+    &-left
+      width: 100%
+    &-right
+      width: 100%
+      margin-top: 20px
+    &-bottomright
+      margin-bottom: 0!important
+
   .catlist-item
     &-midline
       width: calc(100% - 200px)
@@ -614,6 +665,32 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  form
+    h3
+      font-size: 18px
+      margin-bottom: 12px
+    input
+      padding: 10px 16px
+      font-size: 14px
+
+  .checkout-form-right
+    padding: 35px 40px
+    h3
+      font-size: 20px
+
+  .checkout-summary-products
+    font-size: 16px
+
+  .checkout-summary-sum
+    font-size: 16px
+    span
+      font-size: 18px
+
+  .value-div
+    font-size: 14px
+    padding-left: 16px
+    height: 60px
 
   .catlist-item
     padding-left: 5px
@@ -881,6 +958,10 @@
       font-size: 22px
 
 @media (max-width: 390px)
+
+  .checkout-form-right
+    padding-left: 15px
+    padding-right: 15px
 
   .catlist-item
     flex-wrap: wrap
