@@ -133,6 +133,10 @@
 
 @media (max-width: 1500px)
 
+  .stock-item
+    &-img
+      height: 180px
+
   .s-checkout
     padding-bottom: 20px
 
@@ -393,6 +397,13 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+
+  .stocks-wrap
+    justify-content: space-between
+
+  .stock-item
+    margin-right: 0
+    width: calc(50% - 15px)
 
   .checkout-form
     .form-labels-wrap
@@ -667,6 +678,9 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .stock-item
+    width: 100%
 
   form
     h3
@@ -960,6 +974,10 @@
       font-size: 22px
 
 @media (max-width: 390px)
+
+  .stock-item
+    &-img
+      height: 160px
 
   .checkout-form-right
     padding-left: 15px
