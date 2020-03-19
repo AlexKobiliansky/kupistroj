@@ -1,0 +1,95 @@
+.s-cart
+  padding-bottom: 50px
+  .section-title
+    margin-bottom: 20px
+
+.cart-wrap
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  .jq-checkbox
+    border-radius: 0
+
+.cart-right
+  width: 520px
+  padding-top: 53px
+
+.cart-form
+  background-color: #fff
+  box-shadow: 0 0 15px rgba(0,0,0,.1)
+  border-radius: 5px
+  padding: 40px 60px
+  h3
+    font-size: 24px
+    font-weight: 700
+    margin-bottom: 20px
+  &-data
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 25px
+  &-cost
+    font-size: 20px
+    font-weight: 600
+    span
+      font-size: 24px
+  .btn
+    width: 100%
+    margin-bottom: 12px
+  &-notice
+    font-size: 14px
+    color: #aaaaaa
+
+.cart-left
+  width: calc(100% - 550px)
+
+.check-all-label
+  display: inline-block
+  margin-right: 50px
+  cursor: pointer
+  .jq-checkbox
+    margin-right: 10px
+
+.delete-checked
+  color: $accent-red
+  &:hover
+    color: $accent-red
+    text-decoration: underline
+
+.cart-topline
+  margin-bottom: 20px
+
+.cart-item
+  display: flex
+  align-items: center
+  justify-content: space-between
+  background-color: #fff
+  border-radius: 5px
+  padding: 30px 55px 30px 20px
+  margin-bottom: 15px
+  box-shadow: 0 5px 15px rgba(0,0,0,.1)
+
+  &-img
+    width: 130px
+    height: 100px
+    +bg-cover
+  &-price
+    font-size: 20px
+    font-weight: 600
+    white-space: nowrap
+    width: 100px
+    margin-left: 20px
+    span
+      font-size: 24px
+  &-check
+    margin-bottom: 0
+    margin-right: 0
+    margin-left: 20px
+    .jq-checkbox
+      margin-right: 0
+  .spinner-amount
+    white-space: nowrap
+  &-title
+    width: calc(100% - 400px)
+    padding-left: 10px
+    padding-right: 10px

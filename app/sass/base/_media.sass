@@ -38,6 +38,12 @@
 
 @media (max-width: 1700px)
 
+  .cart-right
+    width: 400px
+
+  .cart-left
+    width: calc(100% - 430px)
+
   .product-right
     padding-right: 0
 
@@ -160,6 +166,34 @@
 
 @media (max-width: 1500px)
 
+  .cart-form
+    padding: 25px 20px
+    h3
+      font-size: 20px
+    &-notice
+      font-size: 12px
+
+  .cart-right
+    width: 320px
+
+  .cart-left
+    width: calc(100% - 350px)
+
+  .cart-item
+    padding-right: 30px
+    &-price
+      font-size: 16px
+      width: 80px
+      span
+        font-size: 18px
+    &-img
+      width: 80px
+      height: 80px
+      background-size: contain
+    &-title
+      font-size: 14px
+      line-height: 1.2
+      width: calc(100% - 300px)
 
 
   .product-slider
@@ -455,6 +489,21 @@
 // ≥992px
 +media-breakpoint-down(md)
 
+  .cart-wrap
+    flex-wrap: wrap
+
+  .cart-left
+    width: 100%
+
+  .cart-right
+    width: 100%
+
+  .cart-form
+    max-width: 500px
+    margin-left: auto
+    margin-right: auto
+
+
   .s-recomendations
     .cat-item
       &:nth-child(4)
@@ -681,6 +730,33 @@
 // ≥768px
 +media-breakpoint-down(sm)
 
+  .cart-item
+    flex-wrap: wrap
+    position: relative
+    justify-content: center
+    padding: 30px
+    &-img
+      width: 300px
+      height: 200px
+      margin-left: auto
+      margin-right: auto
+      margin-bottom: 20px
+    &-title
+      width: 100%
+      font-size: 16px
+      margin-bottom: 20px
+      text-align: center
+    &-check
+      position: absolute
+      left: 20px
+      top: 20px
+      margin-left: 0
+    &-price
+      font-size: 20px
+      margin-left: 35px
+      span
+        font-size: 24px
+
   .product-right
     padding-left: 0
     padding-right: 0
@@ -766,6 +842,12 @@
 
 // ≥480px
 +media-breakpoint-down(xs)
+
+  .cart-topline
+    font-size: 14px
+
+  .check-all-label
+    margin-right: 20px
 
   .product-desc
     font-size: 14px
@@ -1102,6 +1184,20 @@
       font-size: 22px
 
 @media (max-width: 390px)
+
+  .cart-topline
+    font-size: 12px
+
+  .cart-item
+    &-img
+      width: 200px
+      height: 150px
+    &-title
+      font-size: 14px
+    &-price
+      font-size: 16px
+      span
+        font-size: 20px
 
   .product-title
     font-size: 16px

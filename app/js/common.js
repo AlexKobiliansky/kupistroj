@@ -177,7 +177,23 @@ $(document).ready(function(){
         $('#payment-type').val(value);
     });
 
-    $('.checkbox-label input').styler();
+    $('input[type="checkbox"]').styler();
+
+    $('#check-all').change( function(){
+        if(this.checked) {
+            $('.cart-item').each(function(){
+                $(this).find('.cart-item-check .jq-checkbox').addClass('checked');
+                $(this).find('.cart-item-check input').prop('checked', true);
+                $(this).addClass('ready-for-deletion');
+            })
+        } else {
+            $('.cart-item').each(function(){
+                $(this).find('.cart-item-check .jq-checkbox').removeClass('checked');
+                $(this).find('.cart-item-check input').prop('checked', false);
+                $(this).removeClass('ready-for-deletion');
+            })
+        }
+    });
 
     //E-mail Ajax Send
     $("form").submit(function() { //Change
