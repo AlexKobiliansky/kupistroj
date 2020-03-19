@@ -40,6 +40,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/owl-carousel/owl.carousel.min.js',
+		'app/libs/owl-carousel/owl.carousel2.thumbs.min.js',
 		'app/libs/mmenu/mmenu.js',
 		'app/libs/equalHeights/jquery.equalheights.min.js',
 		'app/libs/photoswipe/photoswipe.min.js',

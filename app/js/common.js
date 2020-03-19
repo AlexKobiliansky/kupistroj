@@ -97,6 +97,20 @@ $(document).ready(function(){
         dotsEach: 3
     });
 
+    $('.product-slider').owlCarousel({
+        loop:false,
+        nav:false,
+        autoHeight: true,
+        items: 1,
+        thumbs: true,
+        dots: true,
+        thumbsPrerendered: true,
+        thumbItemClass: 'product-nav',
+        animateIn: "fadeIn",
+        animateOut: "fadeOut",
+        mouseDrag: false,
+    });
+
     function heightses() {
         if ($(window).width()>480) {
             $('.production-item-links').equalHeights();
@@ -117,6 +131,20 @@ $(document).ready(function(){
     $('.preloader').fadeOut();
 
 
+    $('.spinner-amount').on('click', 'button', function(e){
+        var parent = $(this).parents('.spinner-amount');
+        var input = parent.find('.amount');
+        var amount = input.val();
+        var btn = parent.siblings('.btn');
+
+        if (!$(this).is('.down')) {
+            amount++
+        } else {
+            if (amount > 1) amount--
+        }
+
+        input.val(amount).attr('value', amount);
+    });
 
     $.validate({
         form : '.contact-form',
