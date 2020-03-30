@@ -60,10 +60,16 @@
     display: flex
     align-items: flex-start
     justify-content: space-between
+    position: relative
+    .cat-labels-wrap
+      right: 0
+      left: auto
+      top: 0
   &-nav
     width: 100px
   .owl-dots
     display: none
+
 
 .product-nav
   height: 100px
@@ -100,6 +106,11 @@
   margin-right: 75px
   span
     font-size: 26px
+  .old
+    font-size: 19px
+    color: $accent-red
+    text-decoration: line-through
+    font-weight: normal
 
 .product-bottom
   .btn

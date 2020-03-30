@@ -2,6 +2,9 @@
   padding-bottom: 30px
   .section-title
     margin-bottom: 20px
+  .btn-wrap
+    margin-top: 15px
+    text-align: center
 
 .filters
   display: flex
@@ -175,13 +178,21 @@
       border-radius: 5px
       width: 46px
       height: 42px
-      .svg
+      a
+        font-size: 0
+        line-height: 1
+        &.active
+          opacity: 1!important
+          svg
+            fill: $accent-red
+      .svg, svg
         width: 21px
         height: auto
         fill: #d5d5d4
         +mt(.3s)
+        cursor: pointer
       &:hover
-        .svg
+        .svg, svg
           fill: $accent-red
   &-label
     line-height: 1
@@ -233,7 +244,8 @@
       height: 100%
   &-links
     font-size: 0
-    a
+    &>a, &>span
+      vertical-align: top
       display: inline-flex
       width: 30px
       height: 30px
@@ -242,7 +254,18 @@
       padding: 3px
       .svg
         width: 14px
+        height: auto!important
+    .simplefavorite-button
+      cursor: pointer
+      svg
+        width: 14px
         height: auto
+        fill: #d5d5d4
+        +mt(.3s)
+      &:hover, &.active
+        svg
+          fill: $accent-red
+
     .btn
       .svg
         fill: #fff

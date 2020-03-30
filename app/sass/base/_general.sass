@@ -100,7 +100,7 @@ ul
   border-radius: 4px
   padding: 16px
   border: none
-  &:hover
+  &:hover, &:active, &:focus
     background-color: darken($accent-blue, 10%)
     color: #fff
     text-decoration: none
@@ -119,7 +119,7 @@ form
   label
     display: block
     margin-bottom: 15px
-  input
+  input, textarea
     width: 100%
     line-height: 1
     padding: 14px 32px
@@ -142,6 +142,25 @@ form
     margin-bottom: 20px
   .help-block
     display: none
+  textarea
+    height: 160px
+
+.popup-form
+  display: block
+  margin-left: auto
+  margin-right: auto
+  position: relative
+  max-width: 440px
+  background-color: #fff
+  padding: 40px
+  text-align: center
+  .btn
+    width: 100%
+  h3
+    margin-bottom: 15px
+  input, textarea
+    padding: 14px
+
 
 .pl-75
   padding-left: 75px
@@ -261,6 +280,56 @@ form
     font-size: 20px
     font-weight: 500
     width: 40px
+
+
+.pagination
+  margin-top: 40px
+  text-align: center
+
+.wp-pagenavi
+  a, span
+    font-size: 18px
+    border: none
+    &.current
+      color: $accent-blue
+      font-weight: 700
+    &.nextpostslink, &.previouspostslink
+      vertical-align: top
+      font-size: 0
+      display: inline-block
+      width: 12px
+      height: 20px
+      background-image: url('../img/icons/page-arrow.png')
+      +bg-cover
+    &.previouspostslink
+      transform: rotate(180deg)
+      margin-right: 15px
+    &.nextpostslink
+      margin-left: 15px
+
+.added_to_cart
+  display: none!important
+
+
+//MY_MFP_ZOOM_IN
+.my-mfp-zoom-in
+  .zoom-anim-dialog, .popup-form, .video-popup
+    opacity: 0
+    transition: all 0.5s ease-in-out
+    transform: scale(0.7)
+  &.mfp-ready .zoom-anim-dialog, &.mfp-ready .popup-form, &.mfp-ready .video-popup
+    opacity: 1
+    transform: scale(1)
+  &.mfp-removing .zoom-anim-dialog, &.mfp-removing .popup-form, &.mfp-removing .video-popup
+    transform: scale(0.7)
+    opacity: 0
+  &.mfp-bg
+    opacity: 0
+    transition: opacity 0.5s ease-out
+  &.mfp-ready.mfp-bg
+    opacity: .9
+  &.mfp-removing.mfp-bg
+    opacity: 0
 
 
 

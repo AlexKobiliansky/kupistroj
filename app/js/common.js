@@ -137,6 +137,10 @@ $(document).ready(function(){
         var amount = input.val();
         var btn = parent.siblings('.btn');
 
+        var product = $(this).parents('.product-wrap');
+        var cartBtn = product.find('.add_to_cart_button');
+
+
         if (!$(this).is('.down')) {
             amount++
         } else {
@@ -144,6 +148,8 @@ $(document).ready(function(){
         }
 
         input.val(amount).attr('value', amount);
+
+        cartBtn.attr("data-quantity", amount);
     });
 
     $.validate({
@@ -179,6 +185,22 @@ $(document).ready(function(){
 
     $('input[type="checkbox"]').styler();
 
+
+    $('.cart-item').each(function(){
+        var th = $(this);
+        var checkbox = th.find('.cart-item-check input[type="checkbox"]');
+
+        checkbox.change(function(){
+            if(this.checked) {
+                th.addClass('ready-for-deletion');
+            } else {
+                $('.cart-item').each(function(){
+                    th.removeClass('ready-for-deletion');
+                })
+            }
+        })
+    });
+
     $('#check-all').change( function(){
         if(this.checked) {
             $('.cart-item').each(function(){
@@ -195,16 +217,62 @@ $(document).ready(function(){
         }
     });
 
+
+    $('.btn-popup').click(function(){
+       var greetingTitle = $(this).data('title');
+
+       $('#greeting-title').text(greetingTitle);
+    });
+
+
+    $(function() {
+        $(".btn-popup").magnificPopup({
+            type: "inline",
+            fixedContentPos: !1,
+            fixedBgPos: !0,
+            overflowY: "auto",
+            closeBtnInside: !0,
+            preloader: !1,
+            midClick: !0,
+            removalDelay: 300,
+            mainClass: "my-mfp-zoom-in"
+        })
+    });
+
     //E-mail Ajax Send
-    $("form").submit(function() { //Change
+    $(".contact-form").submit(function() { //Change
         var th = $(this);
+        th.find(".btn").prop("disabled", "disabled").addClass("disabled");
 
         $.ajax({
             type: "POST",
-            url: "mail.php", //Change
+            url: "/mail.php", //Change
             data: th.serialize()
         }).done(function() {
+            $.magnificPopup.open({
+                items: {
+                    src: '#greeting'
+                },
+                type: 'inline',
 
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-request'
+            }, 0);
+
+            setTimeout(function() {
+                th.find(".btn").removeAttr('disabled').removeClass("disabled");
+                th.trigger("reset");
+                $.magnificPopup.close();
+            }, 3000);
         });
         return false;
     });
